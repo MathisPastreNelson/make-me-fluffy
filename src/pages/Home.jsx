@@ -7,6 +7,7 @@ function Home() {
 
   return (
     <>
+      {/* container principal Home */}
       <div className="Home_Container">
         <h1>Introduction au nouveau projet</h1>
         <button
