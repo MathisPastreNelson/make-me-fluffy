@@ -10,6 +10,7 @@ function Home() {
       {/* container principal Home */}
       <div className="Home_Container">
         {/* infos ici */}
+        {/* Pause de projet pour quelque chose de plus important */}
         <h1>Introduction au nouveau projet</h1>
         <button
           className="button1"
