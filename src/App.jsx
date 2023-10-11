@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <div>
-        {/* composant page  home */}
+        {/* composant page  home t*/}
         <Home />
       </div>
     </>
