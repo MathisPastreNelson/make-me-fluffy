@@ -6,6 +6,7 @@ import "../css/homeBody.scss";
 export default function HomeBody() {
   const [count, setCount] = useState(0);
   return (
+    // Contenu principal
     <div className="homeContainer">
       {" "}
       <h1>Introduction au nouveau projet</h1>
