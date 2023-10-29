@@ -10,6 +10,7 @@ export default function HomeBody() {
     <div className="homeContainer">
       {" "}
       <h1>Introduction au nouveau projet</h1>
+      {/* example d'utilisation javascript dans react */}
       <button
         className="button1"
         onClick={() => setCount((count) => count + 1)}>
