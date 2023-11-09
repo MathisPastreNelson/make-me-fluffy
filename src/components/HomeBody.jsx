@@ -16,6 +16,7 @@ export default function HomeBody() {
         onClick={() => setCount((count) => count + 1)}>
         count is {count}
       </button>
+      {/* it will be good to start something */}
     </div>
   );
 }
