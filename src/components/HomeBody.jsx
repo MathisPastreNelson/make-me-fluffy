@@ -13,6 +13,8 @@ export default function HomeBody() {
       {/* example d'utilisation javascript dans react */}
       <button
         className="button1"
+        // Lorsqu'un élément est cliqué, la fonction fléchée est exécutée.
+        // Elle met à jour l'état 'count' en ajoutant 1 à sa valeur actuelle.
         onClick={() => setCount((count) => count + 1)}>
         count is {count}
       </button>
