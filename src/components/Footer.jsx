@@ -4,6 +4,8 @@ import "../css/footer.scss";
 export default function Footer() {
   return (
     // Footer
-    <footer>Ceci est l'emplacement du footer</footer>
+    <footer>
+      <h1>Par Mathis Pastre</h1>
+    </footer>
   );
 }

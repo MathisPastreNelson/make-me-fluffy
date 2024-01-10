@@ -1,7 +1,7 @@
 import "../css/body.scss";
 import "../css/home.scss";
 
-import Header from "../components/Header";
+// import Header from "../components/Header";
 import HomeBody from "../components/HomeBody";
 import Footer from "../components/Footer";
 
@@ -10,7 +10,8 @@ function Home() {
     <>
       {/* container principal Home */}
       <div className="Home_Container">
-        <Header />
+        {/* je cache le header je ne suis pas sur d'en avoir besoin */}
+        {/* <Header /> */}
         {/* Pause de projet pour quelque chose de plus important */}
         <HomeBody />
 
