@@ -1,11 +1,27 @@
 import React from "react";
-import "../css/header.scss";
 
 export default function Header() {
   return (
-    <header>
-      {/* header maybe add background for first */}
-      <h1>Ceci est l'emplacement du header</h1>
-    </header>
+    <div className="header_content">
+      {" "}
+      <div className="newletter_Container">
+        <p>Newsletter :</p>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email Adress"
+        />
+      </div>
+      <div className="searchBar_Container">
+        <input
+          className="searchbar"
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search for..."
+        />
+      </div>
+    </div>
   );
 }
