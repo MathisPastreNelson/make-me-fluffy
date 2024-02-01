@@ -1,0 +1,47 @@
+[
+  {
+    "name": "image1",
+    "description": "Description de l'image 1",
+    "path": "/src/assets/images/1.png"
+  },
+  {
+    "name": "image2",
+    "description": "Description de l'image 2",
+    "path": "/src/assets/images/2.png"
+  },
+  {
+    "name": "image3",
+    "description": "Description de l'image 3",
+    "path": "/src/assets/images/3.png"
+  },
+  {
+    "name": "image4",
+    "description": "Description de l'image 4",
+    "path": "/src/assets/images/4.jpg"
+  }, 
+   {
+    "name": "image5",
+    "description": "Description de l'image 5",
+    "path": "/src/assets/images/5.jpg"
+  }, 
+   {
+    "name": "image6",
+    "description": "Description de l'image 6",
+    "path": "/src/assets/images/6.jpg"
+  }, 
+   {
+    "name": "image7",
+    "description": "Description de l'image 7",
+    "path": "/src/assets/images/7.jpg"
+  }, 
+   {
+    "name": "image8",
+    "description": "Description de l'image 8",
+    "path": "/src/assets/images/8.jpg"
+  }, 
+   {
+    "name": "image9",
+    "description": "Description de l'image 9",
+    "path": "/src/assets/images/9.jpg"
+  }
+]

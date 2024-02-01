@@ -9,12 +9,12 @@ export default function HomeBody() {
   return (
     // Contenu principal ici
     <div className="globalContainer">
-      <div className="Ads-space">Banner1</div>
+      <div className="Ads-space">BannerSpace1</div>
       <div className="content">
         <Header />
         <PhotoContainer />
       </div>
-      <div className="Ads-space">Banner2</div>
+      <div className="Ads-space">BannerSpace2</div>
     </div>
   );
 }

@@ -1,5 +1,10 @@
+.header_content {
+  background-image: url("../assets/backgrounds/image(12).png");
+  background-size: cover;
+  background-position: center;
+}
+
 .newletter_Container {
-  background-color: yellow;
   width: 20%;
   height: 80px;
   display: flex;
@@ -9,15 +14,40 @@
 
 .searchBar_Container {
   height: 80px;
-  background-color: red;
+
   display: flex;
   width: 80%;
   justify-content: center;
   align-items: center;
 }
 
+.newletter_Text {
+  margin: 0 auto;
+  background-color: white;
+}
+
+.title {
+  margin-right: 20px;
+  background-color: white;
+  padding: 0.52rem;
+}
+
+.email_box {
+  display: flex;
+  margin: 0 auto;
+}
+
+.emailButton {
+  width: 40px;
+}
+
 .searchbar {
   height: 30px;
   width: 240px;
   padding: 10px;
+}
+
+.searchbar_Button {
+  height: 54px;
+  width: 54px;
 }

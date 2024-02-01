@@ -6,6 +6,9 @@
 
 .content {
   width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header_content {
@@ -13,10 +16,11 @@
 }
 
 .Ads-space {
-  background-color: white;
+  background-color: rgb(211, 255, 213);
   height: 100vh;
   width: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 35px;
 }
