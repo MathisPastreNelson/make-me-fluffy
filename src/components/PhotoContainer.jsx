@@ -2,10 +2,15 @@ import React, { useState } from "react";
 import Arrow from "../assets/Icons/arrow.png";
 import imageList from "../assets/images/images.json";
 
-export default function PhotoContainer() {
+export default function PhotoContainer({ searchQuery }) {
   const [selectedImage, setSelectedImage] = useState(imageList[0]);
-  const [startIndex, setStartIndex] = useState(0); // Indice de départ pour afficher les images dans le carrousel
+  const [startIndex, setStartIndex] = useState(0);
   const [isFullScreen, setIsFullScreen] = useState(false);
+
+  // Filtrer les images en fonction de la recherche
+  const filteredImages = imageList.filter((image) =>
+    image.description.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   const toggleFullScreen = () => {
     setIsFullScreen(!isFullScreen);
@@ -13,11 +18,11 @@ export default function PhotoContainer() {
 
   const handleClickImage = (image) => {
     setSelectedImage(image);
-    setIsFullScreen(false); // Désactive le mode plein écran lorsque vous cliquez sur une nouvelle image sélectionnée
+    setIsFullScreen(false);
   };
 
   const handleNext = () => {
-    if (startIndex + 4 < imageList.length) {
+    if (startIndex + 4 < filteredImages.length) {
       setStartIndex(startIndex + 4);
     }
   };
@@ -43,7 +48,7 @@ export default function PhotoContainer() {
         className="selected_img"
         src={selectedImage ? selectedImage.path : null}
         alt="Image sélectionnée"
-        onClick={toggleFullScreen} // Active le mode plein écran lorsque vous cliquez sur l'image sélectionnée
+        onClick={toggleFullScreen}
       />
       <div className="photo_carrousel">
         <div className="arrow left-container">
@@ -56,17 +61,19 @@ export default function PhotoContainer() {
             />
           )}
         </div>
-        {imageList.slice(startIndex, startIndex + 4).map((image, index) => (
-          <img
-            key={index}
-            className="imgSize"
-            src={image.path}
-            alt={image.description}
-            onClick={() => handleClickImage(image)}
-          />
-        ))}
+        {filteredImages
+          .slice(startIndex, startIndex + 4)
+          .map((image, index) => (
+            <img
+              key={index}
+              className="imgSize"
+              src={image.path}
+              alt={image.description}
+              onClick={() => handleClickImage(image)}
+            />
+          ))}
         <div className="arrow right-container">
-          {startIndex + 4 < imageList.length && (
+          {startIndex + 4 < filteredImages.length && (
             <img
               className="arrow"
               src={Arrow}

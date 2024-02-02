@@ -1,18 +1,23 @@
-import React from "react";
-import { useState } from "react";
-
+import React, { useState } from "react";
 import Header from "../components/Header";
 import PhotoContainer from "../components/PhotoContainer";
 
 export default function HomeBody() {
-  const [count, setCount] = useState(0);
+  const [searchQuery, setSearchQuery] = useState(""); // État de la recherche
+
+  // Fonction de recherche qui sera passée à PhotoContainer
+  const handleSearch = (query) => {
+    setSearchQuery(query);
+  };
+
   return (
-    // Contenu principal ici
     <div className="globalContainer">
       <div className="Ads-space">BannerSpace1</div>
       <div className="content">
-        <Header />
-        <PhotoContainer />
+        <Header onSearch={handleSearch} />{" "}
+        {/* Passer la fonction de recherche */}
+        <PhotoContainer searchQuery={searchQuery} />{" "}
+        {/* Passer l'état de la recherche */}
       </div>
       <div className="Ads-space">BannerSpace2</div>
     </div>

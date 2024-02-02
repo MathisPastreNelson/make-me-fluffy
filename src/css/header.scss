@@ -1,5 +1,6 @@
 .header_content {
   background-image: url("../assets/backgrounds/image(12).png");
+
   background-size: cover;
   background-position: center;
 }
@@ -23,13 +24,19 @@
 
 .newletter_Text {
   margin: 0 auto;
-  background-color: white;
+  background-color: rgba(149, 150, 230, 0.89);
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 5px;
 }
 
 .title {
   margin-right: 20px;
-  background-color: white;
-  padding: 0.52rem;
+  background-color: rgba(149, 150, 230, 0.89);
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  color: white;
 }
 
 .email_box {
@@ -37,17 +44,26 @@
   margin: 0 auto;
 }
 
+.emailbar {
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px 0 0 5px;
+}
 .emailButton {
   width: 40px;
+  border-radius: 0 5px 5px 0;
+  background-color: rgba(149, 150, 230, 0.89);
 }
 
 .searchbar {
   height: 30px;
   width: 240px;
   padding: 10px;
+  border-radius: 15px 0 0 15px;
 }
 
 .searchbar_Button {
   height: 54px;
   width: 54px;
+  border-radius: 0 15px 15px 0;
+  background-color: rgba(149, 150, 230, 0.89);
 }
