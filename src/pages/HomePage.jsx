@@ -5,7 +5,6 @@ import "../css/footer.scss";
 import "../css/header.scss";
 import "../css/homeBody.scss";
 import "../css/photoContainer.scss";
-import "../css/searchContainer.scss";
 
 import HomeBody from "../components/HomeBody";
 

@@ -7,7 +7,7 @@
 .Home_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 colonnes de largeur égale */
-
+  width: 70vw;
   background-color: red;
 }
 
@@ -17,10 +17,6 @@
   flex-direction: column;
   align-items: center;
   margin: 1rem;
-}
-
-.header_content {
-  display: flex;
 }
 
 .home_Image {

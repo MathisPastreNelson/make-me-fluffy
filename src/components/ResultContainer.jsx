@@ -1,39 +1,22 @@
-import React, { useState } from "react";
-import Arrow from "../assets/Icons/arrow.png";
+import React from "react";
 import imageList from "../assets/images/images.json";
 
 export default function PhotoContainer({ searchQuery }) {
-  const [selectedImage, setSelectedImage] = useState(null);
+  // Récupérer le nom de l'endpoint à partir de l'URL
+  const endpoint = window.location.pathname.substring(1);
 
-  // Filtrer les images pour n'afficher qu'une seule image par description
-  const uniqueImages = {};
-  imageList.forEach((image) => {
-    if (!uniqueImages[image.description]) {
-      uniqueImages[image.description] = image;
-    }
-  });
-
-  const filteredImages = Object.values(uniqueImages).filter((image) =>
-    image.description.toLowerCase().includes(searchQuery.toLowerCase())
+  // Filtrer les images pour n'afficher que celles ayant la même description que l'endpoint
+  const imagesToShow = imageList.filter(
+    (image) => image.description === endpoint
   );
 
-  const handleClickImage = (image) => {
-    setSelectedImage(image);
-  };
-
   return (
-    <div className="photo_container">
-      {selectedImage && (
-        <div
-          className="fullscreen_image_overlay"
-          onClick={() => setSelectedImage(null)}>
-          <img
-            className="fullscreen_image"
-            src={selectedImage.path}
-            alt="Image en plein écran"
-          />
+    <div className="result_container">
+      {imagesToShow.map((image, index) => (
+        <div className="Result_container_imagesBox" key={index}>
+          <img className="result_images" src={image.path} alt={image.name} />
         </div>
-      )}
+      ))}
     </div>
   );
 }

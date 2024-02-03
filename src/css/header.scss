@@ -3,10 +3,12 @@
   height: 10vh;
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .newletter_Container {
-  width: 20%;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -17,7 +19,7 @@
   height: 80px;
 
   display: flex;
-  width: 80%;
+
   justify-content: center;
   align-items: center;
 }
@@ -32,7 +34,6 @@
 }
 
 .title {
-  margin-right: 20px;
   background-color: rgba(149, 150, 230, 0.89);
   padding: 0.5rem 0.75rem;
   border-radius: 10px;
@@ -66,4 +67,8 @@
   width: 54px;
   border-radius: 0 15px 15px 0;
   background-color: rgba(149, 150, 230, 0.89);
+}
+
+.return_link {
+  color: white;
 }

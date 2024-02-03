@@ -4,7 +4,7 @@ import "../css/body.scss";
 import "../css/footer.scss";
 import "../css/header.scss";
 import "../css/homeBody.scss";
-import "../css/photoContainer.scss";
+import "../css/resultContainer.scss";
 
 import ResultBody from "../components/ResultBody";
 
