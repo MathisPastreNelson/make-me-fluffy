@@ -1,15 +1,18 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Home from "./pages/Home";
+import SearchPage from "./pages/HomePage";
+import ResultPageContent from "./pages/ResultPage";
 
 function App() {
   return (
-    <>
-      <div>
-        {/* composant page  home t*/}
-        <Home />
-      </div>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<SearchPage />} />
+
+        <Route path="/:description" element={<ResultPageContent />} />
+      </Routes>
+    </Router>
   );
 }
 

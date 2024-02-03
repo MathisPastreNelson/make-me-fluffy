@@ -4,21 +4,34 @@
   display: flex;
 }
 
-.content {
-  width: 75%;
+.Home_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes de largeur égale */
+
+  background-color: red;
+}
+
+.Home_container_imagesBox {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
 }
 
 .header_content {
   display: flex;
 }
 
+.home_Image {
+  height: 20vh;
+  width: 10vw;
+  object-fit: cover;
+}
 .Ads-space {
   background-color: rgb(211, 255, 213);
   height: 100vh;
-  width: 15%;
+  width: 15vw;
   display: flex;
   justify-content: center;
   align-items: center;

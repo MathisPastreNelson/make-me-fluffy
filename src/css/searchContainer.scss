@@ -1,0 +1,15 @@
+.search_container {
+  background-color: yellow;
+  display: flex;
+  justify-content: space-evenly;
+  height: 90vh;
+  width: 70vw;
+}
+
+.goTo {
+  height: 20vh;
+  width: 10vw;
+  object-fit: cover;
+  cursor: pointer;
+  margin: 1rem 0;
+}

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Header from "./Header";
-import HomeContainer from "./HomeContainer";
+import ResultContainer from "./ResultContainer";
 
-export default function SearchBody() {
+export default function ResultBody() {
   const [searchQuery, setSearchQuery] = useState(""); // État de la recherche
 
   // Fonction de recherche qui sera passée à PhotoContainer
@@ -13,10 +13,10 @@ export default function SearchBody() {
   return (
     <div className="globalContainer">
       <div className="Ads-space">BannerSpace1</div>
-      <div className="searchContainer">
+      <div className="content">
         <Header onSearch={handleSearch} />{" "}
         {/* Passer la fonction de recherche */}
-        <HomeContainer searchQuery={searchQuery} />{" "}
+        <ResultContainer searchQuery={searchQuery} />{" "}
         {/* Passer l'état de la recherche */}
       </div>
       <div className="Ads-space">BannerSpace2</div>

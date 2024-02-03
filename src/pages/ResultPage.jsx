@@ -1,19 +1,21 @@
+// ResultPage.jsx
+import React from "react";
 import "../css/body.scss";
 import "../css/footer.scss";
 import "../css/header.scss";
 import "../css/homeBody.scss";
 import "../css/photoContainer.scss";
 
-import HomeBody from "../components/HomeBody";
+import ResultBody from "../components/ResultBody";
 
-function Home() {
+function ResultPageContent() {
   return (
     <>
       <div className="Home_Container">
-        <HomeBody />
+        <ResultBody />
       </div>
     </>
   );
 }
 
-export default Home;
+export default ResultPageContent;
