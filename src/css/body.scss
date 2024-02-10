@@ -6,4 +6,11 @@
 
 body {
   background-color: rgb(206, 82, 68);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.searchContainer {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
 }

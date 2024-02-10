@@ -36,32 +36,7 @@ export default function Header({ onSearch }) {
 
   return (
     <div className="header_content">
-      <div className="newletter_Container">
-        <p className="newletter_Text">Newsletter :</p>
-        <div className="email_box">
-          <input
-            className="emailbar"
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email Adress"
-          />
-          <button className="emailButton" onClick={handleEmailSubmit}>
-            Send
-          </button>
-        </div>
-      </div>
-
       <h1 className="title">Temporary Title</h1>
-
-      {!isInEndpoint && (
-        <div>
-          <Link className="return_link" to="/">
-            Retour à l'accueil
-          </Link>
-        </div>
-      )}
-
       {isInEndpoint && (
         <div className="searchBar_Container">
           <input
@@ -80,6 +55,30 @@ export default function Header({ onSearch }) {
           </button>
         </div>
       )}
+
+      {!isInEndpoint && (
+        <div>
+          <Link className="return_link" to="/">
+            Retour à l'accueil
+          </Link>
+        </div>
+      )}
+
+      {/* <div className="newletter_Container">
+        <p className="newletter_Text">Subscribe to our newsletter :</p>
+        <div className="email_box">
+          <input
+            className="emailbar"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Adress"
+          />
+          <button className="emailButton" onClick={handleEmailSubmit}>
+            Send
+          </button>
+        </div>
+      </div> */}
     </div>
   );
 }

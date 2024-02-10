@@ -1,5 +1,6 @@
 import React from "react";
 import imageList from "../assets/images/images.json";
+import imageTest from "../assets/images/5.jpg";
 
 export default function PhotoContainer({ searchQuery }) {
   // Récupérer le nom de l'endpoint à partir de l'URL
@@ -11,12 +12,14 @@ export default function PhotoContainer({ searchQuery }) {
   );
 
   return (
-    <div className="result_container">
+    <div className="Home_container">
       {imagesToShow.map((image, index) => (
-        <div className="Result_container_imagesBox" key={index}>
-          <img className="result_images" src={image.path} alt={image.name} />
+        <div className="Home_container_imagesBox" key={index}>
+          <img className="home_Image" src={image.path} alt={image.name} />
         </div>
       ))}
+
+      {/* A ajouter un visualizer ici  */}
     </div>
   );
 }

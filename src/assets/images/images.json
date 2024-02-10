@@ -16,7 +16,7 @@
   },
   {
     "name": "image4",
-    "description": "Philippe",
+    "description": "Philou",
     "path": "/src/assets/images/4.jpg"
   }, 
    {
@@ -43,5 +43,63 @@
     "name": "image9",
     "description": "Darmanin",
     "path": "/src/assets/images/9.jpg"
+  }, 
+  
+  
+     {
+    "name": "image10",
+    "description": "meuf",
+    "path": "/src/assets/images/10.webp"
+  }, 
+
+  {
+    "name": "image11",
+    "description": "Aurélie",
+    "path": "/src/assets/images/11.jpg"
+  },
+  {
+    "name": "image12",
+    "description": "Sylvie",
+    "path": "/src/assets/images/12.jpg"
+  },
+  {
+    "name": "image13",
+    "description": "Juliette",
+    "path": "/src/assets/images/13.jpg"
+  },
+  {
+    "name": "image14",
+    "description": "Camille",
+    "path": "/src/assets/images/14.jpg"
+  },
+  {
+    "name": "image15",
+    "description": "Manon",
+    "path": "/src/assets/images/15.jpg"
+  },
+  {
+    "name": "image16",
+    "description": "Léa",
+    "path": "/src/assets/images/16.jpg"
+  },
+  {
+    "name": "image17",
+    "description": "Sophie",
+    "path": "/src/assets/images/17.jpg"
+  },
+  {
+    "name": "image18",
+    "description": "Marine",
+    "path": "/src/assets/images/18.jpg"
+  },
+  {
+    "name": "image19",
+    "description": "Alice",
+    "path": "/src/assets/images/19.jpg"
+  },
+  {
+    "name": "image20",
+    "description": "Emilie",
+    "path": "/src/assets/images/20.jpg"
   }
 ]

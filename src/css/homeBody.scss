@@ -1,16 +1,25 @@
 .globalContainer {
-  background-color: rgb(252, 116, 4);
-
+  background-color: rgb(176, 199, 233);
+  width: 100vw;
   display: flex;
 }
 
+// Container entre ads
 .Home_container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colonnes de largeur égale */
+  grid-template-columns: repeat(4, 1fr); /* 4 colonnes de largeur égale */
+  margin-top: 2rem;
   width: 70vw;
-  background-color: red;
+  padding: 0 2rem;
+}
+// ADS
+.Ads-space {
+  background-color: rgb(211, 255, 213);
+  height: 100vh;
+  width: 15vw;
 }
 
+// container images
 .Home_container_imagesBox {
   display: flex;
   justify-content: center;
@@ -19,17 +28,37 @@
   margin: 1rem;
 }
 
+// Image individuels
 .home_Image {
-  height: 20vh;
-  width: 10vw;
-  object-fit: cover;
+  height: 10rem;
+  width: 15rem;
+  object-fit: contain;
+  background-color: rgb(235, 235, 235);
+  outline: 1px solid black;
+  transition: transform 200ms ease-in;
 }
-.Ads-space {
-  background-color: rgb(211, 255, 213);
-  height: 100vh;
-  width: 15vw;
+
+.home_Image:hover {
+  transform: scale(1.05);
+  background-color: rgb(195, 216, 245);
+}
+
+.arrow_Container {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 35px;
+  width: 100%;
+}
+// arrows
+.arrow {
+  height: 36px;
+
+  transition: 0.3s ease-in-out;
+  outline: 1px solid black;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+.arrow:hover {
+  scale: 1.25;
 }
