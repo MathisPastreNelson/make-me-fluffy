@@ -18,7 +18,7 @@ export default function ResultBody() {
 
   return (
     <div className="globalContainer">
-      <img className="Ads-space" src={banner1} alt="" srcset="" />
+      <img className="Ads-space" src={banner1} alt="" />
       <div className="content">
         <Header onSearch={handleSearch} />{" "}
         {/* Passer la fonction de recherche */}
@@ -31,7 +31,7 @@ export default function ResultBody() {
           <img className="arrow" src={arrowRight} alt="" />
         </div>
       </div>
-      <img className="Ads-space" src={banner2} alt="" srcset="" />
+      <img className="Ads-space" src={banner2} alt="" />
     </div>
   );
 }
