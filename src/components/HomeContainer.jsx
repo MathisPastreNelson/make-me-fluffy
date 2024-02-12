@@ -59,7 +59,7 @@ export default function HomeContainer({ searchQuery }) {
   const fastForwardOpacity = startIndex + 60 < filteredImages.length ? 1 : 0.5;
 
   return (
-    <div>
+    <div className="general_container">
       <div className="Home_container">
         {filteredImages
           .slice(startIndex, startIndex + 12)

@@ -1,3 +1,11 @@
+.general_container {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
 .globalContainer {
   background-color: rgb(176, 199, 233);
   width: 100vw;
@@ -8,7 +16,7 @@
 .Home_container {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 colonnes de largeur égale */
-  margin-top: 2rem;
+
   width: 70vw;
   padding: 0 2rem;
 }
